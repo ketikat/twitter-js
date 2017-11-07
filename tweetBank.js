@@ -5,8 +5,6 @@ const data =[];
 
 
 
-
-
 function add (name, content) {
   data.push({ name: name, content: content });
 }
@@ -44,3 +42,6 @@ const getFakeTweet = function() {
 for (let i = 0; i < 10; i++) {
   module.exports.add( getFakeName(), getFakeTweet() );
 }
+
+
+console.log(data)
