@@ -8,4 +8,9 @@ router.get('/', function (req, res) {
   res.render('index', { tweets: tweets } )
 })
 
+router.get('/stylesheets/style.css', function(req, res, next){
+	res.sendFile('/Users/katballo/Desktop/Foundations/twitter-js/public/stylesheets/style.css')
+})
+
+
 module.exports = router;
