@@ -22,10 +22,9 @@ app.set('view engine', 'html'); // have res.render work with html files
 app.engine('html', nunjucks.render); // when giving html files to res.render, tell it to use nunjucks
 nunjucks.configure('views'); // point nunjucks to the proper directory for templates
 
-app.use('/', function (req, res, next) {
+app.use(function (req, res, next) {
   console.log(req.path)
   console.log(req.method)
-  res.send(`<h1>under construction</h1>`)
   next()
 })
 
