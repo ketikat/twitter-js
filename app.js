@@ -22,6 +22,14 @@ app.set('view engine', 'html'); // have res.render work with html files
 app.engine('html', nunjucks.render); // when giving html files to res.render, tell it to use nunjucks
 nunjucks.configure('views'); // point nunjucks to the proper directory for templates
 
+// app.use is taking a function
+// that function looks does this:
+// 1.finds the associated file on our system
+// 2.if err, move on call (ie. call next)
+// otherwise, res.send that file with the correct headers
+// --->this is the typical way to use express static middleware
+app.use(express.static(__dirname + '/public'));
+
 app.use(function (req, res, next) {
   console.log(req.path)
   console.log(req.method)

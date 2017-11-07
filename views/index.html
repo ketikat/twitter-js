@@ -13,13 +13,11 @@
     </div>
     <div class="col-md-9">
 
-<!--  <div id='li-padding-bott'>  -->
+
       <!-- display tweets here -->
       {% for tweet in tweets %}
-      <!-- <div id='li-padding-bott'>  -->
-        <li>{{tweet.name}} </li>
-        <li>{{tweet.content}}</li>
-      <!-- </div> -->
+        <li class='tn'>{{tweet.name}} </li>
+        <li class='tt'>{{tweet.content}}</li>
       {% endfor %}
   <!-- </div> -->
     </div>

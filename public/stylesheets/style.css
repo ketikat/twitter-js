@@ -1,8 +1,28 @@
 html,
 body {
   height: 100%;
+
   /* The html and body elements cannot have any padding or margin. */
 }
+
+/* ----------------our changes BELOW----------------- */
+
+.tn{
+  font-weight: bolder;
+}
+
+
+.tt{
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+
+li { 
+  list-style-type: none; 
+}
+
+/* ----------------our changes ABOVE----------------- */
 
 /* Wrapper for page content to push down footer */
 #wrap {
@@ -58,7 +78,8 @@ code {
   font-weight: bold;
 }
 
-/* our changes */
 
-li { list-style-type: none; }
+
+
+
 
